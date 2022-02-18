@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+    <h1>Example for (this) key word</h1>
+    <script>
+//----------------------------------------------------------------------------------------------------------------------------------------
+
+        var name="Ajay ammlu";
+        document.write("name = ",name,"<br>");
+        document.write("this.name = ",name,"<br><hr>");
+    
+//---------------------------------------------------------------------------------------------------------------------------------------
+
+        var owner=this;
+        this.owner="Ram";
+        document.write(this,"<br><hr>");
+
+//----------------------------------------------------------------------------------------------------------------------------------------
+
+        var stud={
+            name:'Ajai',
+            class:"Bca",
+            year:"3rd",
+            rno:1,
+            address:{
+                addres:"servaikaran city",
+                pincode:624620,
+            },
+            detail:function(){
+                return 'student name is '+this.name+', class '+this.class+', and his rno is '+this.rno+'<br>'+'His address:area is '+this.address.addres+', and pin-code is:'+this.address.pincode+"<br><hr>";
+            }
+        };
+        document.write('<br>',stud.detail());
+
+//--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+        function show()
+        {
+            //'use strict';
+            return this;
+        }
+            document.write('<br>',show());
+
+
+
+//-------------------------------------------------------------------------------------------------------------------------------------
+document.write("<hr><h5>Useing this key word to pass the value </h5>")
+//----------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+//   add / multi to pass the value with (this- key word)
+var a=5;
+var cal={
+            sum(){
+                return this.a+this.b;
+            },
+            mul(){
+                return a*b;
+            },
+            read(){
+    /*this.*/   a= +prompt("enterv the first value : ",1);
+                
+    /*this.*/   b= +prompt("enterv the second value : ",2); 
+        }
+}
+
+        cal.read();
+        document.write('add res = '+cal.sum());
+        document.write('<br>mul res = '+cal.mul());
+
+//------------------------------------------------------------------------------------------------------------------------------------------------------
+    </script>
+
+    <br><hr>
+    useing without this method : <input type="button" value="click me" onclick="style.color='red'">
+    <br>
+    use with this key method : <input type="button" value="click me" onclick="this.style.color='red'">
+    <br><hr>
+
+</body>
+</html>

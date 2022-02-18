@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+//-------------------------------------------------------------
+
+/*
+                    ARRAY CREATIONS
+                   ~~~~~~~~~~~~~~~~~
+
+        (-)     BY Array literal
+                  var arr=[]
+        (-)     by using an array constructor (new keyword)
+                  var arr=new Array()
+*/
+
+
+//---------------------------------------------------------------------------------
+     //  BY Literal
+
+        var topic=["Html","Css","Javascript","React js"]
+        document.write("Our ui topics are <br> ",topic+"<br><hr>");
+//---------------------------------------------------------------------------------
+        var colors=[];
+        colors[0]='red';
+        colors[1]='yellow';
+        colors[2]='green';
+        colors[3]='blue';
+        document.write(" our colors are " ,colors+"<br><hr>") 
+//---------------------------(end By Literal)------------------------------------------------------
+
+//-----------------------------------------------------------------------------------
+
+//BY CONSTRUCTOR
+        var arr1=new Array();
+        arr1[0]="93";
+        arr1[1]='67',
+        arr1[2]=51;
+        arr1[3]='79';
+        arr1[4]=48;
+        arr1[5]=" this is my ph no";
+
+        document.write(arr1)        
+
+//----------------------------[ end BY CONSTRUCTOR ]------------------------------------------------------------------
+    
+
+
+//___________________________________________________________________________________________________________________
+/*
+                    (Array manipulation)
+
+                    1) loop
+                        (-) for loop
+                        (-) for ..of     <---- fastly work
+                        (-) for ..in     <----it can work slowly
+
+                    2) Insertion  <--- to add a new datas in array [ex: arr[3]="blue"] // [ex: topic.length=2   <-- the first 2 datas only display]
+                    3) Replace     <--- to edit the array data [ex: arr[3]="Ajai", arr[3]="Ajay" ]
+*/
+
+// 1} loop
+// (-) for loop
+
+    document.write("<br><hr> Useing for loop ")
+        for(i=0;i<topic.length;i++)
+        {
+            document.write("<br>",topic[i])
+        }
+// (-) for ..of
+    document.write("<br><hr> Useing for ...of loop ")
+        for(j of topic)
+        {
+            document.write("<br>",j)  //  <--- here we can not use [](index)
+        }
+
+// (-) for ..in 
+    document.write("<br><hr> Useing for ...in loop ")
+        for(k in topic)
+        {
+            document.write("<br>",topic[k])
+        }
+
+// [ EXAMPLE FOR LOOP ]
+document.write("<br><hr> use for loop to print the array value/name :  ")
+        var name="Ajaykrishnan";
+        for(var i=0;i<=name.length;i++)
+        {
+            document.write("<br>",name[i]);
+        }
+
+
+// [Ex] for loop to total the value in array
+    document.write("<br><hr> use for loop to total the marks ")
+            var marks=[100,100,100,100,100]
+            var s=0;
+            var i;
+            for(i=0;i<marks.length;i++)
+            {
+                s+=marks[i];
+                document.write("<br>",marks[i])
+            }
+
+            document.write("<br>the total marks of 5 subject = ",s);
+
+// [Ex : ] use for loop to print the 10 to above 10
+document.write("<br><hr> use for loop to print 10 and above 10 ")
+        var num=[1,2,3,4,5,5,66,77,88,10,11,33,65]
+        var c=0;
+        var b;
+
+            for(b=0;b<num.length;b++)
+            {
+                if(num[b]>=10)
+                document.write("<br>",num[b])
+            }
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

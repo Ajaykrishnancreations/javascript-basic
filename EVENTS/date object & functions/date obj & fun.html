@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+</head>
+<body>
+    <h1>Date object & function </h1>
+    <script>
+ 
+//-----------------------------------------------------------------------------
+        var a=new Date();
+        document.write(a); // <--- current date and time
+
+        var b=new Date(2000,05,03,05,15,00);
+        document.write("<br>",b);
+
+        var c=new Date(20000000000);
+        document.write("<br>",c);
+
+        var d=new Date("jun 06,2000 5:15:00");
+        document.write("<br>",d);
+//-----------------------------------------------------------------------------
+document.write("<br><hr>")
+//-----------------------------------------------------------------------------
+
+// GET DAY,DATE,TIME,MIN,HOURS,ect.,
+
+        var s=new Date();
+        document.write("<br>Day : ",s.getDay());
+        document.write("<br>Date : ",s.getDate());
+        document.write("<br>Month : ",s.getMonth());
+        document.write("<br>year : ",s.getFullYear());
+        document.write("<br>hours : ",s.getHours());
+        document.write("<br>minutes : ",s.getMinutes());
+        document.write("<br>millisecond : ",s.getMilliseconds());
+next work
+//https://www.plus2net.com/javascript_tutorial/clock.php
+
+    </script>
+</body>
+</html>

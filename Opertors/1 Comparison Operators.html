@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>
+    function fun(){
+        var name=document.getElementById("n1").value;
+        var age=document.getElementById("a1").value;
+        var nat=document.getElementById("nati").value;
+
+        if(nat!="indian"){
+            alert("only indians can vote")
+        }
+        else{
+            if(age>=18){
+                document.write("You are elagiable to vote");
+            }
+            else{
+                alert("your not elagiable to vote")
+            }
+        }
+    }
+</script>
+</head>
+<body>
+    <h1>Comparison Operators to vote verify</h1>
+    <br>
+    <table>
+        <tr>
+            <td>Enter Name  </td>
+            <td> : <input type="text" id="n1" ></td>
+        </tr>
+        <tr>
+            <td>Enter Age </td>
+            <td> : <input type="number" id="a1"></td>
+        </tr>
+        <tr>
+            <td>Enter Nationality </td>
+            <td> : <input type="text" id="nati"></td>
+        </tr>
+        <tr>
+            <td colspan="2"> <center><input type="submit" onclick="fun()" value="check"></center></td>
+        </tr>
+    </table>
+</body>
+</html>

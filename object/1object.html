@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+    <script>
+//----------------------------------------------------------------------------------------------------------
+
+    //literals
+    // (1)
+    
+         var stud={};
+         stud.name="Ajay";
+         stud.age=22;
+         stud.class='Bca';
+
+/*to change => */ stud.age=21;
+/*to delete => */ delete stud.class;
+
+         document.write("<h2>Object method </h2><h4>literals method</h4>"+stud.name+stud.age+stud.class+"<br>");
+
+    // (2)
+
+        var stud1={
+           'full name':"Ajai",
+            age:21,
+            class:"c.s"
+        }
+        document.write(stud1['full name']+stud1.age+"<br><hr><br>");
+//-------------- loop -------
+        var key;
+        for(key=1;key<=1;key++)
+        {
+            document.write("<h5>Useing for loop to print</h5>"+stud1['full name']+stud1.age+"<br>");
+        }
+//----------------------------------------------------------------------------------------------------------
+
+    // insttance of an object
+
+    var stud2=new Object();
+    stud2.name='Amlu';
+    stud2.age=20;
+/*to change => */ stud2.age=21;
+
+
+    document.write("<hr><br><h4>insttance of an object</h4>"+stud2.name+stud2.age+"<br><hr>")
+
+//-----------------------------------------------------------------------------------------------------------
+
+    // constructor
+    function stud3(name,age,clas)
+    {
+        this.name=name;
+        this.age=age;
+        this.clas=clas;
+    }
+    var s1=new stud3("AJAI",21,"BCA")
+    var s2=new stud3("KRISHNAN",15,"CA")
+
+    document.write("<h4>constructor</h4>"+s1.name+s1.age)
+    document.write("<br>"+s2.name+s2.age+"<hr>")
+
+//-----------------------------------------------------------------------------------------------------------
+    </script>
+</body>
+</html>

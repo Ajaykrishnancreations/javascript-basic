@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+
+//_____________________________________________________________________________________________
+
+
+
+
+//  for each
+//  ~~~~~~~~~
+
+// Find odd-(or)-even number in array
+
+ var arr=[1,2,3,4,5,6,7,8];
+        var emparr=[];
+        
+ arr.forEach(number => {
+        if (number%2==1){
+            emparr.push(number);
+        }
+ });
+        document.write(emparr);
+
+//-------------------------------------------------------------------------------------------
+document.write("<br><hr>")
+//-------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+// map
+
+var day=["monday","tuesday","wenesday","thursday","friday"];
+var len=day.map(iteams => iteams.length);
+document.write("<br> Map method <br> Array element = ",day);
+document.write("<br> length of the element = ",len);
+
+//-------------------------------------------------------------------------------------------
+document.write("<br><hr>")
+//-------------------------------------------------------------------------------------------
+
+
+
+
+
+// Every-some-filter
+
+var marks=[35,56,78,32,98];
+function check(value)
+{
+    return value>34;
+}
+document.write("Array useing (every-some-filter) method ")
+// EVERY
+document.write("<br>(useing every method) To check every mark is above 34 = ",marks.every(check));
+// SOME
+document.write("<br>(useing some method) To check any one of the mark is above 34 = ",marks.some(check));
+//FILTER
+document.write("<br> (useing filter method) To filter the marks above 34 = ",marks.filter(check));
+
+
+//-------------------------------------------------------------------------------------------
+document.write("<br><hr>")
+//-------------------------------------------------------------------------------------------
+
+
+
+
+
+
+//sorting
+var num=[3,6,8,9,1,2,4,55,6,88,33]
+var q=num.sort();
+document.write("<br> sort <br>",q)
+
+//______________________________________________________________________________________________
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
